@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge" />
+  <title>
+    Vital Vision 2.0
+  </title>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+      <h2> </h2>
+  </div>
+  <hr>
+
+  <div class="container">
+  <h2>Vital Vision 2.0</h2>
+ 
+    <div class="card" style="width:1400px">
+ 
+    <h4 class="card-text">Handwritten Prescription:</h4>
+    <img src="{{ user_image }}" alt="Uploaded Image is Displayed" width="500" height="400">
+     <h4 class="card-text">Extracted Handwritten Text:</h4>
+     <hr>
+	
+    {% for f in text %}
+        <p> {{ f }} </p>
+    {% endfor %}
+
+    <br>
+    <hr>
+      <h4 class="card-text">Click on 'Classify' to classify the medical data</h4>
+    <form action = "/classifier" method="post" enctype="multipart/form-data">
+        <input type= "submit" name="comprehend" value="Classify" class="btn btn-primary">
+    </form>
+    <br>
+    
+  </div>
+  <br>
+</div>
+
+</body>
+
+</html>

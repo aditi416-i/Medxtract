@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge" />
+  <title>
+    Vital Vision 2.0
+  </title>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+      <h2> </h2>
+  </div>
+  <hr>
+
+  <div class="container">
+  <h2>Vital Vision 2.0</h2>
+ 
+    <div class="card" style="width:1400px">
+     
+    <div class="card-body ">
+      <form action="/upload" method="post" enctype="multipart/form-data">
+      <p class="card-text">Choose a prescription file to upload</p>
+        <input type="file" name="file" value="file">
+        <br>
+      <input type="submit" name="upload" value="Upload" class="btn btn-success">
+      </form>
+    </div>
+    
+  </div>
+  <br>
+</div>
+
+</body>
+
+</html>

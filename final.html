@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge" />
+  <title>
+    Vital Vision 2.0
+  </title>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+      <h2> </h2>
+  </div>
+  <hr>
+
+  <div class="container">
+  <h2>Vital Vision 2.0</h2>
+ 
+    <div class="card" style="width:1400px">
+     
+    <div class="card-body ">
+      {{msg1}}
+      <br>
+      {{msg2}}
+    </div>
+
+    <form action = "/return" method="post" enctype="multipart/form-data">
+        <input type= "submit" name="home" value="Upload Another Prescription" class="btn btn-primary">
+    </form>
+    
+  </div>
+  <br>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge" />
+  <title>
+    Vital Vision 2.0
+  </title>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+      <h2> </h2>
+  </div>
+  <hr>
+
+  <div class="container">
+  <h2>Vital Vision 2.0</h2>
+ 
+    <div class="card" style="width:1400px">
+
+     <h4 class="card-text">Extracted Medical Entities and Their Attributes:</h4>
+     <br>
+     {% for f in text %}
+        <p> {{ f }} </p>
+    {% endfor %}
+    <br><br>
+    <form action = "/store" method="post" enctype="multipart/form-data">
+        <input type= "submit" name="storage" value="Store in Database" class="btn btn-primary">
+    </form>
+    <br><br>
+    
+  </div>
+  <br>
+</div>
+
+</body>
+
+</html>
