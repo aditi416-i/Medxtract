@@ -3,7 +3,7 @@ from html import entities
 from flask import Flask, render_template, request,jsonify, session
 import boto3
 import os
-app = Flask(__name__)
+app = Flask(__name__) // Initializing Flask app 
 from werkzeug.utils import secure_filename
 from collections import OrderedDict
 
